@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+}
+.container{
+ display: flex;
+ flex-direction: row;
+}
+.col-1{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   float: left;
+   width:50%;
+   height:100vh;
+   background: #0F2027;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color:white;
+   opacity: 0.9;
+}
+h1{
+    font-weight: 900;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 60px;
+}
+.col-2{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+   float: right;
+   width:50%;
+   height:100vh;
+   background-color: #132140;
+   opacity: 0.9;
+}
+.col-auto{
+    padding-top:15px;
+}
+h2,strong{
+    padding-bottom: 10px;
+    font-style: italic;
+    color:white;
+    font-family: cursive;
+}
+
+label{
+   font-family:'Roboto', sans-serif ;
+   
+}
+input{
+    margin-right: auto;
+   padding: 7px 50px;  
+   
+}
+input [type=text]{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+input [type=Password]{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    
+}
+.btn-submit{
+  font-size: 15px;
+  background-color: rgb(114, 114, 146);
+  color:whitesmoke;
+  padding:8px 48px;
+  width:100%;
+}
+.forget{
+    text-align: center;
+}
+.forget a{
+    text-decoration: none;
+    color:White;
+    font-weight: 400;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: small;
+    color: antiquewhite;
+    text-align: center;
+    
+    
+}
