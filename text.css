@@ -1,87 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:ital,wght@1,500&display=swap');
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-   box-sizing: border-box;
-}
-.container{
- display: flex;
- flex-direction: row;
-}
-.col-1{
-    display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-   float: left;
-   width:50%;
-   height:100vh;
-   background-color: #fff;
-   
-   color:white;
-   opacity: 0.9;
+    box-sizing: border-box;
 }
 
-.col-2{
+.container {
     display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-   float: right;
-   width:50%;
-   height:100vh;
-   background-color: #132140;
-   opacity: 0.9;
+    flex-direction: row;
 }
-.col-auto{
-    padding-top:15px;
+
+.col-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+
+    color: white;
+    opacity: 0.9;
 }
-h2,strong{
+
+.col-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 50%;
+    height: 100vh;
+    background-color: #132140;
+    opacity: 0.9;
+}
+
+.col-auto {
+    padding-top: 15px;
+}
+
+h2,
+strong {
     padding-bottom: 10px;
     font-style: italic;
-    color:white;
+    color: white;
     font-family: cursive;
     font-size: 30px;
 }
 
-label{
-   font-family:'Roboto', sans-serif ;
-   
+label {
+    font-family: 'Roboto', sans-serif;
+
 }
-input{
+
+input {
     margin-right: auto;
-   padding: 7px 50px;  
-   
+    padding: 7px 50px;
+
 }
-input [type=text]{
+
+input [type=text] {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    color:black;
+    color: black;
 }
-input [type=Password]{
+
+input [type=Password] {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    
+
 }
-.btn-submit{
-  font-size: 15px;
-  background-color: rgb(114, 114, 146);
-  color:whitesmoke;
-  padding:8px 48px;
-  width:100%;
+
+.btn-submit {
+    font-size: 15px;
+    background-color: rgb(114, 114, 146);
+    color: whitesmoke;
+    padding: 8px 48px;
+    width: 100%;
 }
-.forget{
+
+.forget {
     text-align: center;
 }
-.forget a{
+
+.forget a {
     text-decoration: none;
-    color:White;
+    color: White;
     font-weight: 400;
 }
-.footer{
+
+.footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
@@ -89,9 +102,59 @@ input [type=Password]{
     font-size: small;
     color: antiquewhite;
     text-align: center;
-    
-    
+
+
 }
 
-    
+@media (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .col-1 {
+        width: 100%;
+
+    }
+img{
+    width:100%;
+    height:400px;
+}
+    .col-2 {
+        text-align: center;
+        align-content: center;
+
+        justify-content: center;
+            width:100%;
+        background-color: #132140;
+
+    }
+
+    h2,
+    strong {
+        font-size: 15px;
+        font-style: italic;
+        color: white;
+        font-family: cursive;
+    }
+
+    input {
+        margin-right: auto;
+        padding: 10px 20px;
+
+    }
+    input [type=text] {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        color: black;
+    }
+    
+    input [type=Password] {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    
+    }
+
+}
